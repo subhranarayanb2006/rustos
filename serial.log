@@ -1,0 +1,22 @@
+==============================================================
+   RustOS 1.0 (32-bit x86) - Multiboot Kernel Entry Point    
+==============================================================
+[BOOT] Multiboot Magic: 0x2badb002 (Expected: 0x2badb002)
+[BOOT] Multiboot Info:  0x00009000
+[GDT] 32-bit Flat Model GDT loaded successfully.
+[IDT] 256 IDT gate descriptors registered.
+[PIC] Dual 8259 PIC cascaded & remapped to 0x20-0x2F.
+[PIT] Timer channel 0 programmed to 100 Hz.
+[KBD] PS/2 keyboard buffer initialized.
+[MEM] 16 MB heap registered. GlobalAlloc active.
+[CPU] Hardware interrupts enabled.
+[FS] RAMFS mounted with 4 default educational documents.
+[NET] Initializing Network Subsystem...
+[NET] Found Intel 82540EM (e1000) Network Card on PCI!
+[e1000] Initializing Intel 82540EM (PCI 0:3.0)
+[e1000] MAC Address: 08:00:27:6c:88:f0
+[e1000] Link Status: DOWN
+[DHCP] Sending DHCP Discover to VirtualBox NAT router...
+[NET] IP: 10.0.2.15 | Gateway: 10.0.2.2 | DNS: 10.0.2.3
+[NET] Network subsystem online.
+[RESEARCH] Deadlock research benchmark completed and written to /deadlock_results.txt
