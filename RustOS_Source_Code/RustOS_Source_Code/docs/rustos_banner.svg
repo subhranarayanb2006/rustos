@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050814" />
+      <stop offset="50%" stop-color="#0b112c" />
+      <stop offset="100%" stop-color="#070c20" />
+    </linearGradient>
+
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="50%" stop-color="#4facfe" />
+      <stop offset="100%" stop-color="#f35526" />
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f35526" />
+      <stop offset="100%" stop-color="#ff7e40" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#141e42" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0d142e" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Glow Filters -->
+    <filter id="glowCyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="glowOrange" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Grid Pattern -->
+    <pattern id="cyberGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e2a56" stroke-width="0.8" stroke-opacity="0.6"/>
+      <circle cx="0" cy="0" r="1.5" fill="#00f2fe" fill-opacity="0.4"/>
+    </pattern>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="360" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Cyber Grid Overlay -->
+  <rect width="1200" height="360" rx="16" fill="url(#cyberGrid)" />
+
+  <!-- Ambient Glow Orbs -->
+  <circle cx="150" cy="80" r="140" fill="#00f2fe" fill-opacity="0.08" filter="url(#glowCyan)" />
+  <circle cx="1050" cy="280" r="160" fill="#f35526" fill-opacity="0.08" filter="url(#glowOrange)" />
+  <circle cx="600" cy="180" r="220" fill="#2563eb" fill-opacity="0.05" />
+
+  <!-- Top Decorative Bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#titleGrad)" />
+
+  <!-- Corner Brackets -->
+  <g stroke="#00f2fe" stroke-width="2" fill="none" opacity="0.6">
+    <path d="M 24 44 L 24 24 L 44 24" />
+    <path d="M 1176 44 L 1176 24 L 1156 24" />
+    <path d="M 24 316 L 24 336 L 44 336" />
+    <path d="M 1176 316 L 1176 336 L 1156 336" />
+  </g>
+
+  <!-- RustOS Gear Logo Graphic (Left Side) -->
+  <g transform="translate(110, 180)">
+    <!-- Outer Glow Ring -->
+    <circle cx="0" cy="0" r="68" fill="none" stroke="#f35526" stroke-width="2" stroke-dasharray="8 6" opacity="0.7"/>
+    <!-- Middle Ring -->
+    <circle cx="0" cy="0" r="54" fill="#0e1738" stroke="#00f2fe" stroke-width="2.5" />
+    <!-- Gear Spokes -->
+    <g fill="#f35526">
+      <rect x="-6" y="-62" width="12" height="14" rx="2"/>
+      <rect x="-6" y="48" width="12" height="14" rx="2"/>
+      <rect x="-62" y="-6" width="14" height="12" rx="2"/>
+      <rect x="48" y="-6" width="14" height="12" rx="2"/>
+      <rect x="-44" y="-44" width="12" height="12" rx="2" transform="rotate(45)"/>
+      <rect x="32" y="-44" width="12" height="12" rx="2" transform="rotate(45)"/>
+      <rect x="-44" y="32" width="12" height="12" rx="2" transform="rotate(45)"/>
+      <rect x="32" y="32" width="12" height="12" rx="2" transform="rotate(45)"/>
+    </g>
+    <!-- Center Core -->
+    <circle cx="0" cy="0" r="32" fill="#050814" stroke="#f35526" stroke-width="2.5" />
+    <!-- Rust 'R' Stylized -->
+    <text x="0" y="11" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="900" fill="#00f2fe" text-anchor="middle">R</text>
+  </g>
+
+  <!-- Main Headers (Centered / Left Aligned from x=230) -->
+  <g transform="translate(230, 0)">
+    <!-- Category Tag -->
+    <rect x="0" y="55" width="220" height="26" rx="13" fill="#1e2952" stroke="#3b82f6" stroke-width="1"/>
+    <circle cx="14" cy="68" r="4" fill="#00f2fe" />
+    <text x="26" y="72" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#93c5fd" letter-spacing="1.5">32-BIT x86 OPERATING SYSTEM</text>
+
+    <!-- Main Title -->
+    <text x="0" y="145" font-family="'Segoe UI', Roboto, 'Arial Black', sans-serif" font-size="64" font-weight="900" fill="url(#titleGrad)" letter-spacing="2" filter="url(#glowCyan)">RustOS</text>
+
+    <!-- Subtitle -->
+    <text x="4" y="185" font-family="'Segoe UI', Roboto, sans-serif" font-size="19" font-weight="400" fill="#cbd5e1" letter-spacing="0.5">
+      Modern Bare-Metal OS in Rust with <tspan fill="#00f2fe" font-weight="600">VGA Desktop</tspan>, <tspan fill="#f35526" font-weight="600">Unix Shell</tspan> &amp; <tspan fill="#4ade80" font-weight="600">Deadlock Research Lab</tspan>
+    </text>
+
+    <!-- Architecture & Capability Pills -->
+    <g transform="translate(0, 225)">
+      <!-- Pill 1 -->
+      <g transform="translate(0, 0)">
+        <rect width="145" height="34" rx="8" fill="url(#cardGrad)" stroke="#3b82f6" stroke-width="1.2"/>
+        <text x="72" y="21" font-family="'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="600" fill="#93c5fd" text-anchor="middle">i686 Protected Mode</text>
+      </g>
+      <!-- Pill 2 -->
+      <g transform="translate(155, 0)">
+        <rect width="135" height="34" rx="8" fill="url(#cardGrad)" stroke="#00f2fe" stroke-width="1.2"/>
+        <text x="67" y="21" font-family="'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="600" fill="#67e8f9" text-anchor="middle">Oracle VirtualBox</text>
+      </g>
+      <!-- Pill 3 -->
+      <g transform="translate(300, 0)">
+        <rect width="135" height="34" rx="8" fill="url(#cardGrad)" stroke="#f35526" stroke-width="1.2"/>
+        <text x="67" y="21" font-family="'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="600" fill="#fdba74" text-anchor="middle">TCP/IP &amp; e1000 NIC</text>
+      </g>
+      <!-- Pill 4 -->
+      <g transform="translate(445, 0)">
+        <rect width="145" height="34" rx="8" fill="url(#cardGrad)" stroke="#a855f7" stroke-width="1.2"/>
+        <text x="72" y="21" font-family="'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="600" fill="#d8b4fe" text-anchor="middle">Banker's Algorithm</text>
+      </g>
+      <!-- Pill 5 -->
+      <g transform="translate(600, 0)">
+        <rect width="150" height="34" rx="8" fill="url(#cardGrad)" stroke="#22c55e" stroke-width="1.2"/>
+        <text x="75" y="21" font-family="'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="600" fill="#86efac" text-anchor="middle">33 Unix Shell Tools</text>
+      </g>
+    </g>
+
+    <!-- Status Line -->
+    <text x="4" y="300" font-family="'Consolas', 'Courier New', monospace" font-size="13" fill="#64748b">
+      &gt; Kernel ELF @ 1 MiB | 16 MB Coalescing Heap | El Torito Bootable ISO | #![no_std]
+    </text>
+  </g>
+</svg>
